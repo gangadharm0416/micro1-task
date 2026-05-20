@@ -1,0 +1,11 @@
+id: lodash-cve-2020-8203
+name: Patch prototype pollution in lodash deep-path setters
+category: vulnerability_remediation
+cve: CVE-2020-8203
+reference_commit: https://github.com/lodash/lodash/pull/4759
+
+environment:
+  dockerfile: environment/Dockerfile
+prompt: prompt.md
+grader: grader/run.sh
+reference_solution: reference/fix.patch

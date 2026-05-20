@@ -1,0 +1,12 @@
+Reference solution: upstream patch from lodash/lodash#4759.
+
+The fix hardens the shared path-walking helper so that path segments
+named '__proto__', 'constructor', or 'prototype' are skipped when
+creating intermediate objects during deep-path set/update.
+
+Authoritative diff: https://github.com/lodash/lodash/pull/4759/files
+Merged commit:      c84fe82760fb2d3e03a63379b297a1cc1a2fce12
+
+(Fetch and drop the unified diff in here when building the image; the
+grader does not consume this file — it's for reviewers to confirm
+the task is solvable.)
